@@ -1,0 +1,564 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ * {
+     box-sizing: border-box;
+ }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  line-height: 1.4;
+  color: #5d5d5d;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: #3776ab;
+}
+
+/* Page Structure */
+
+img,
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
+
+.container {
+  width: 1300px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0 0 40px 0;
+  margin: 0;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 25px;
+  padding: 35px;
+  margin: 0 0 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+/* Grid / Columns */
+
+.columns:after {
+  content:'';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+.half-col {
+  width: calc(50% - 10px);
+  float: left;
+  margin-right: 20px;
+}
+
+.half-col:nth-child(even) {
+  margin-right: 0;
+}
+
+/* Header with menu */
+
+header {
+  background-color: #2e5e87;
+  color: #fff;
+  border-bottom: 1px solid #32648f;
+  padding: 15px 0 10px 0;
+}
+
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+header nav {
+  float: right;
+}
+
+header nav a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 17px;
+  text-decoration: none;
+  padding: 30px 15px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/* Top Banner (blue) */
+
+section.banner {
+  padding: 80px 0;
+  background: #2b5b84 url('../img/banner-bg.jpg') no-repeat 50% top;
+}
+
+.intro {
+  color: #fff;
+  width: 75%;
+  margin-left: 25%;
+  background-color: rgba(43, 91, 132, 0.8);
+  padding: 20px 25px 25px;
+}
+
+.intro h1 {
+  font-weight: 400;
+  margin: 0 0 15px 0;
+}
+
+p.lede-paragraph {
+  font-size: 25px;
+  font-weight: 400;
+  color: #ccd9e5;
+  margin: 0;
+}
+
+.intro p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Conferences(Generic Styles) */
+
+/* individual card*/
+.conference {
+  border: 1px solid #ececec;
+  background-color: #fff;
+  margin: 20px 0;
+  width: 100%;
+  margin-right: 20px;
+  table-layout: fixed;
+  vertical-align: top;
+  border-radius: 2px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    1px 1px 2px 0px rgba(50, 50, 50, 0.1);
+  box-shadow:         1px 1px 2px 0px rgba(50, 50, 50, 0.1);
+}
+
+/* card header */
+.conference-header {
+  display: table;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ececec;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+
+.flag {
+  display: table-cell;
+  padding-right: 10px;
+  width: 70px;
+}
+
+.flag-icon {
+  border: 1px solid #ececec;
+}
+
+.conference-title {
+  display: table-cell;
+}
+
+.conference-title h3 {
+  margin: 0;
+}
+
+.location {
+  font-style: italic;
+  margin-top: -3px;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #767676;
+}
+
+/* card body */
+.conference-details {
+  padding: 15px;
+}
+
+.conference-details > :first-child {
+  margin-top: 0;
+}
+
+.conference-details > :last-child {
+  margin-bottom: 0;
+}
+
+/* National Conferences */
+section.map {
+  background: rgb(249, 249, 249) url('../img/map.png') no-repeat fixed 50% 10%;
+}
+
+section.map .section-header {
+  border-color: #ececec;
+  background-color: rgba(249, 249, 249, 0.5);
+}
+
+/* Regional Conferences */
+section.stars {
+  background: #2b5b84 url('../img/stars.jpg') repeat fixed 50% 10%;
+}
+
+section.stars .section-header {
+  color: #fff;
+  background-color: rgba(249, 249, 249, 0.05);
+  border-color: rgba(249, 249, 249, 0.075);
+}
+
+section.stars .conference {
+  border-color: rgba(249, 249, 249, 0.075);
+  background-color: rgba(249, 249, 249, 0.05);
+  color: #fff;
+}
+
+section.stars .conference-header {
+  border-color: rgba(249, 249, 249, 0.075);
+}
+
+section.stars .location,
+section.stars a {
+  color: #ccd9e5;
+}
+
+/* Calendar */
+
+section.shapes {
+  background: url('../img/shapes.jpg') repeat fixed 50% 10%;
+}
+
+section.shapes .section-header {
+  border-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+iframe.calendar {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #444;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p:first-of-type {
+  float: left;
+}
+
+footer p:last-of-type {
+  float: right;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 1900px) {
+  section.banner {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  section.banner {
+    background-image: url('../img/banner-bg-1000.jpg');
+  }
+
+  section.map {
+    background-image: url('../img/map-1000.png');
+  }
+
+  footer p:first-of-type {
+    float: none;
+  }
+
+  footer p:last-of-type {
+    margin-top: 10px;
+    float: none;
+  }
+
+  section.banner {
+    padding: 20px 0;
+  }
+
+  .intro {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  iframe.calendar {
+    padding: 5px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo {
+    max-width: 200px;  
+  }
+
+  section.banner {
+    background-image: url('../img/banner-bg-600.jpg');
+  }
+
+  section.map {
+    background-image: url('../img/map-600.png');
+  }
+
+  .intro {
+    padding: 15px;
+  }
+
+  .intro h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+  }
+
+  .half-col {
+    width: 100%;
+    float: none;
+    float: left;
+    margin: 0;
+  }
+
+  .half-col:last-of-type {
+    margin-top: -20px;
+  }
+
+  .section-header {
+    margin-bottom: 0;
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  iframe.calendar {
+    margin-top: 20px;
+  }
+
+  p.lede-paragraph {
+    font-size: 18px;
+  }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
