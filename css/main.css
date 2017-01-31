@@ -129,6 +129,16 @@ section {
   clear: both;
 }
 
+.third-col {
+  width: calc(33.33% - 7px);
+  float: left;
+  margin-right: 10px;
+}
+
+.third-col:nth-child(3) {
+  margin-right: 0;
+}
+
 .half-col {
   width: calc(50% - 10px);
   float: left;
@@ -426,6 +436,17 @@ footer a {
   }
 
   .half-col:last-of-type {
+    margin-top: -20px;
+  }
+
+  .third-col {
+    width: 100%;
+    float: none;
+    float: left;
+    margin: 0;
+  }
+
+  .third-col:last-of-type {
     margin-top: -20px;
   }
 

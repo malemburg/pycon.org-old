@@ -5,9 +5,10 @@ This is the source code for [pycon.org](http://www.pycon.org/).
 If you run a Python event or conference, you can add or edit your listing by
 making a pull request to this repository.
 
-Conferences/events are listed in alphabetical order, so please be sure to insert
-yours in the correct position. As the conferences are presented in columns
-you may need to move the column container to make two columns equal in length.
+Conferences/events are listed in alphabetical order (by country), so please be
+sure to insert yours in the correct position. As the conferences are presented
+in columns you may need to move the column container to make two columns equal
+in length.
 
 Each *national* conference card should follow this format:
 
@@ -53,7 +54,7 @@ For Example:
 </div>
 ```
 
-*Special interest and regional* conferences should follow this format:
+*Special interest and regional* conferences should follow this format (sort by event name):
 
 ```
 <div class="conference">
